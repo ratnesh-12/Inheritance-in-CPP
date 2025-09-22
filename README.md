@@ -10,13 +10,33 @@ Inheritance is one of the key features of **Object-Oriented Programming (OOP)**.
 
 This promotes **code reusability**, **extensibility**, and establishes an **"is-a" relationship** between classes.
 
-### Types of Inheritance
+# Types of Inheritance in C++
 
-1. **Single Inheritance** – A class derives from a single base class.
-2. **Multiple Inheritance** – A class derives from more than one base class.
-3. **Multilevel Inheritance** – A class is derived from another derived class.
-4. **Hierarchical Inheritance** – Multiple classes are derived from the same base class.
-5. **Hybrid Inheritance** – A combination of the above types.
+1. **Single Inheritance**
+
+   * A derived class inherits from one base class.
+   * Example: `Student` inherits from `Person`.
+
+2. **Multiple Inheritance**
+
+   * A derived class inherits from more than one base class.
+   * Example: `TeachingAssistant` inherits from both `Teacher` and `Student`.
+
+3. **Multilevel Inheritance**
+
+   * A class is derived from another derived class, forming a chain.
+   * Example: `Person → Employee → Manager`.
+
+4. **Hierarchical Inheritance**
+
+   * Multiple derived classes inherit from a single base class.
+   * Example: `Car`, `Bike`, and `Bus` all inherit from `Vehicle`.
+
+5. **Hybrid Inheritance**
+
+   * A combination of two or more types of inheritance.
+   * Example: Using both hierarchical and multiple inheritance together.
+   * It may lead to the **diamond problem**, which is handled in C++ using **virtual base classes**.
 
 ### Syntax Example
 
